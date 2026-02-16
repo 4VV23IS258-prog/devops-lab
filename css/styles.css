@@ -1,0 +1,221 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background: #3498db;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-size: 18px;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: #2980b9;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 8px;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.featured-courses h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.course-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.course-item:hover {
+    transform: translateY(-10px);
+}
+
+.course-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.course-item p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.about ul {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.about li {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form label {
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 12px 20px;
+    background: #3498db;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #2980b9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-item {
+        width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .about h1 {
+        font-size: 2.2em;
+    }
+
+    .about h2 {
+        font-size: 1.8em;
+    }
+}
