@@ -1,1 +1,1 @@
-print("No ERROR")
+raise TypeError("NOT A GOOD TYPE")
